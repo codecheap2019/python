@@ -6,10 +6,11 @@ app = Flask(__name__)
 
 def home(): 
 	return "Hello World!"
+	
 @app.route("/about")
 
-def home():
-	return "Hello World!"
+def about():
+	return "This About"
 	
 if __name__ == '__main__':
 	app.run(debug=True)
