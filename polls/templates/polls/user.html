@@ -1,0 +1,9 @@
+{% if users %}
+    <ul>
+    {% for question in users %}
+        <li><a href="/polls/{{ question.name }}/">{{ question.mobile }}{{ question.name }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No polls are available.</p>
+{% endif %}
